@@ -1,0 +1,290 @@
+@font-face {
+  font-family: "Nunito Sans";
+  src: url(/assets/fonts/NunitoSans.ttf);
+  font-style: normal;
+  font-weight: normal;
+}
+.e-outter-frame {
+  display: block;
+  padding-top: 5rem;
+  padding-bottom: 6.25rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  min-width: 60rem;
+}
+
+.e-inner-frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7.5rem;
+  margin: 0 auto;
+  /* max-width: 73.75rem; */
+  /* padding-left: 3.125rem; */
+}
+
+.e-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  align-items: flex-start;
+  min-width: 19rem;
+  max-width: 36.25rem;
+}
+
+.e-content-header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.e-h1 {
+  color: #f2be22;
+  text-shadow: 0px 0px 1px;
+  font-family: Nunito Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  margin: 0;
+  /* 83.333% */
+}
+
+.btn {
+  background-color: #1a3e3e;
+  color: white;
+  font-family: Nunito Sans, sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.25rem;
+  letter-spacing: 0.012rem;
+  grid-column: 2/3;
+  margin-left: 1rem;
+  border-radius: 0.25rem 0.25rem 0.25rem 0.25rem;
+  width: 15rem;
+  height: 2.75rem;
+}
+
+.e-h2 {
+  color: #18121e;
+  font-family: Nunito Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 120%;
+  text-align: left;
+  margin: 0;
+  /* 38.4px */
+}
+
+.e-content-text {
+  color: #18121e;
+  font-family: Nunito Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  /* 27px */
+}
+
+.e-content-point {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.e-point-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background: #e5eeeb;
+  width: 50px;
+  height: 50px;
+}
+
+.e-point-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4px;
+  flex: 1 0 0;
+}
+
+.e-point-header {
+  color: #18121e;
+  font-family: Nunito Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 20px;
+  /* 111.111% */
+  letter-spacing: 0.216px;
+}
+
+.e-point-text {
+  align-self: stretch;
+  color: #000;
+  font-family: Nunito Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  /* 142.857% */
+}
+
+.e-small-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25rem;
+  width: 21.875rem;
+  flex-shrink: 0;
+  border-radius: 24px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  overflow: hidden;
+}
+
+.e-play {
+  display: flex;
+  height: 50px;
+  width: 50px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  background: rgba(253, 253, 253, 0.6);
+  z-index: 99;
+}
+
+.e-bkg {
+  background: #f3f5f4;
+}
+
+.e-inner-third {
+  display: flex;
+  align-items: center;
+  gap: 120px;
+}
+
+.e-rounded-image1 {
+  display: block;
+  width: 15.625rem;
+  height: 15.625rem;
+  border-radius: 0px 50px;
+}
+
+.e-rounded-image2 {
+  display: block;
+  width: 15.625rem;
+  height: 15.625rem;
+  border-radius: 50px 0px;
+}
+
+.e-collage {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  min-width: 510px;
+  max-width: 510px;
+  min-height: 510px;
+  max-height: 510px;
+  position: relative;
+  align-items: center;
+  justify-items: center;
+}
+
+.e-content-image {
+  min-width: 30rem;
+  max-width: 30rem;
+  min-height: 32.875rem;
+  max-height: 32.875rem;
+  position: relative;
+}
+
+@media all and (max-width: 68.875rem) {
+  .e-content {
+    gap: 0.8rem;
+  }
+  .e-inner-frame {
+    gap: calc(-61.375rem + 100vw);
+  }
+}
+@media all and (max-width: 768px) {
+  .e-small-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: unset;
+    width: 92vw;
+    height: 110vw;
+    border-radius: 24px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: relative;
+    overflow: hidden;
+  }
+  .e-outter-frame {
+    min-width: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
+  }
+  .e-inner-frame {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    justify-content: left;
+    gap: 1.5rem;
+    margin: 0 auto;
+    /* max-width: 73.75rem; */
+    /* padding-left: 3.125rem; */
+  }
+  .e-content {
+    max-width: unset;
+    gap: 1.5rem;
+  }
+  .e-content-image {
+    min-width: unset;
+    max-width: unset;
+    min-height: unset;
+    max-height: unset;
+  }
+  .e-content-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  .e-h1 {
+    align-self: stretch;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  .e-h2 {
+    align-self: stretch;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 120%;
+  }
+  .e-point-header {
+    letter-spacing: 0.216px;
+  }
+  .e-point-text {
+    font-weight: 400;
+    line-height: 142.857%;
+    /* 142.857% */
+  }
+  .e-play {
+    position: absolute;
+  }
+  .hide-below-md {
+    display: none;
+  }
+}/*# sourceMappingURL=programm.css.map */

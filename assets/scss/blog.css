@@ -1,0 +1,121 @@
+@font-face {
+  font-family: "NEXT ART";
+  src: url("../fonts/NEXTART_Bold.woff") format(woff);
+}
+@font-face {
+  font-family: "Nunito Sans SB";
+  src: url("../fonts/NunitoSans-SemiBold.woff") format(woff);
+}
+@font-face {
+  font-family: "Nunito Sans R";
+  src: url("../fonts/NunitoSans-Regular.woff") format(woff);
+}
+h2 {
+  color: #18121E;
+  text-align: center;
+  font-family: Nunito Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 120%; /* 38.4px */
+}
+
+.subheader {
+  order: -1;
+  color: #F2BE22;
+  font-family: Nunito Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 83.333% */
+}
+
+.blog {
+  background: #F3F5F4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 23.12rem 6.25rem 23.12rem;
+}
+
+.blog__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px 20px;
+  margin-bottom: 50px;
+}
+
+.blog__btn {
+  border-radius: 4px;
+  background: #1A3E3E;
+  border: none;
+  width: 157px;
+  height: 44px;
+  color: #FDFDFD;
+  font-family: "Nunito Sans SB";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.192px;
+}
+
+.news {
+  display: flex;
+  padding: 16px;
+  background-color: #FDFDFD;
+  border-radius: 10px;
+  gap: 24px;
+}
+
+.news__img {
+  width: 14.375rem;
+  height: 17.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 6px;
+}
+
+.news__text {
+  overflow: hidden;
+}
+
+.news__info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.news__date {
+  color: #F2BE22;
+  font-family: Nunito Sans;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.25rem; /* 142.857% */
+}
+
+.news__link {
+  color: #1A3E3E;
+  font-family: Nunito Sans;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.25rem; /* 142.857% */
+}
+
+@media all and (max-width: 768px) {
+  .news {
+    display: flex;
+    flex-direction: column;
+    min-width: auto;
+  }
+}
+@media all and (max-width: 320px) {
+  .news:not(:first-child) {
+    display: none;
+  }
+  .blog {
+    padding: 5rem 0 6.25rem 0;
+  }
+}/*# sourceMappingURL=blog.css.map */
